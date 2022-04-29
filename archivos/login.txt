@@ -1,0 +1,6 @@
+1; Ray; 123; 0; Raynick; Rosario; Ray@gmail.com
+2; Ger; 321; 1; Gerson; Santos; Santos@gmail.com
+3; Ram; 123; 1; Ramon; Dominguez; Dominguez@gmail.com4;
+4; Oliv; 321; 0; Abad; Hernandez; Random@gmail.com
+5; Glory; 123; 1; Glory; Belis; Random@gmail.com
+6; Pamela; 123; 1; Pamela; Peralta; Pam@gmail.com

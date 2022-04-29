@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>UTESA</groupId>
+    <artifactId>Proyecto_final_nomina</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
+    
+    <dependencies>
+        
+        <dependency>
+            <groupId>pdfbox-tools</groupId>
+            <artifactId>pdfbox-tools</artifactId>
+            <version>2.0.19</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/pdfbox-tools-2.0.19.jar</systemPath>
+        </dependency>        
+        
+        <dependency>
+            <groupId>pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+            <version>2.0.19</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/pdfbox-2.0.19.jar</systemPath>
+        </dependency>
+        
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.2</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/commons-logging-1.2.jar</systemPath>
+        </dependency>        
+
+        <dependency>
+            <groupId>fontbox</groupId>
+            <artifactId>fontbox</artifactId>
+            <version>2.0.19</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/libs/fontbox-2.0.19.jar</systemPath>
+        </dependency>
+                
+    </dependencies>
+    
+</project>
