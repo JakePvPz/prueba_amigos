@@ -41,9 +41,6 @@ public class Consulta_empleados extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         JTable = new javax.swing.JTable();
         btn_consultar = new javax.swing.JButton();
-        btn_ordenar_x_fecha = new javax.swing.JButton();
-        btn_ordenar_x_puesto = new javax.swing.JButton();
-        btn_ordenar_x_dept = new javax.swing.JButton();
         menu = new javax.swing.JMenuBar();
         menu_principal = new javax.swing.JMenu();
         menu_Mantenimientos = new javax.swing.JMenu();
@@ -89,12 +86,6 @@ public class Consulta_empleados extends javax.swing.JFrame {
                 btn_consultarMouseClicked(evt);
             }
         });
-
-        btn_ordenar_x_fecha.setText("X Fecha");
-
-        btn_ordenar_x_puesto.setText("X ID Puesto");
-
-        btn_ordenar_x_dept.setText("X ID Dept");
 
         menu_principal.setText("Principal");
         menu_principal.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -203,23 +194,19 @@ public class Consulta_empleados extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(28, 28, 28)
-                .addComponent(jScrollPane1)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jScrollPane1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(360, 360, 360)
+                        .addComponent(jLabel1)
+                        .addGap(0, 394, Short.MAX_VALUE)))
                 .addContainerGap())
             .addGroup(layout.createSequentialGroup()
-                .addGap(360, 360, 360)
-                .addComponent(jLabel1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(164, Short.MAX_VALUE)
-                .addComponent(btn_ordenar_x_dept)
-                .addGap(69, 69, 69)
-                .addComponent(btn_ordenar_x_puesto)
-                .addGap(95, 95, 95)
-                .addComponent(btn_ordenar_x_fecha)
-                .addGap(85, 85, 85)
+                .addGap(398, 398, 398)
                 .addComponent(btn_consultar)
-                .addGap(91, 91, 91))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -228,13 +215,9 @@ public class Consulta_empleados extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 331, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btn_ordenar_x_dept)
-                    .addComponent(btn_ordenar_x_puesto)
-                    .addComponent(btn_ordenar_x_fecha)
-                    .addComponent(btn_consultar))
-                .addContainerGap(80, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(btn_consultar)
+                .addContainerGap(74, Short.MAX_VALUE))
         );
 
         pack();
@@ -408,9 +391,6 @@ public class Consulta_empleados extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTable JTable;
     private javax.swing.JButton btn_consultar;
-    private javax.swing.JButton btn_ordenar_x_dept;
-    private javax.swing.JButton btn_ordenar_x_fecha;
-    private javax.swing.JButton btn_ordenar_x_puesto;
     private javax.swing.JMenu consulta_de_departamento;
     private javax.swing.JMenu consulta_de_puestos;
     private javax.swing.JMenu consulta_empleado;

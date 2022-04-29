@@ -1,1 +1,3 @@
-1; Administrador de culos
+1; Gerente
+2; Supervisor
+3; Normal
